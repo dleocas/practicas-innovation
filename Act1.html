@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Default</title>
-        <link href="ibs.css" media="all" rel="Stylesheet" type="text/css" />
+        <link href="ibs.css" media="all" rel="stylesheet" type="text/css" />
         <style>
             body{
                 
@@ -49,15 +49,16 @@
             <table>
                 <tr>
                     <td>
+                        <p class="titulo">Login</p>
                         <div class="t2">
                             <table>
                                 <tr>
                                     <td>
-                                        <label class="text">Email:</label><br>
+                                        <label class="small">Email:</label><br>
                                         <input type="text" name="email" ><br>
-                                        <label class="text">Contraseña</label><br>
+                                        <label class="small">Contraseña</label><br>
                                         <input type="password" name="password"><br>
-                                        <button type="button">Aceptar</button>
+                                        <button class="boton" onclick="openWindow()" type="button">Aceptar</button>
                                         
                                     </td>
                                 </tr>
@@ -69,8 +70,13 @@
             </table>
             
         </div>
-        <div class="capa">
-
-        </div>
+        <!--<div class="capa">
+            <p></p>
+        </div>-->
+        <script>
+        function openWindow(){
+            window.open('https://www.google.es');
+        }
+        </script>
     </body>
 </html>
