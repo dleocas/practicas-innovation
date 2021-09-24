@@ -86,14 +86,17 @@
 
             function check(){
                 var email = $(document).ready(function(){
-                    $(".emailInput").value;
+                    $(".emailInput").text();
+                    //Corregir
                 });
                 var password = $(document).ready(function(){
                     $(".passwordInput").value;
-                });;
+                });
 
                 var emailText = String(email);
                 var passwordText = String(password);
+
+                console.log(emailText);
 
                 var emailError = false;
                 var passwordError = false;
@@ -107,7 +110,7 @@
                 }
 
                 if(emailError || passwordError){
-                    var errorMessage;
+                    var errorMessage = "";
                     $(document).ready(function(){
                         $(".capa").css("display", "inherit");
                     });
