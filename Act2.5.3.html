@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2_5_3</title>
+        <link href="ibs.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="js/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <div>
+            <img id="boton" src="images/boton_off.png" ></img>
+        </div>
+        <script>
+            $("#boton").mouseenter(function(){
+                $("#boton").attr("src", "images/boton_on.png");
+            });
+        
+            $("#boton").mouseleave(function(){
+                $("#boton").attr("src", "images/boton_off.png");
+            });
+        </script>
+    </body>
+</html>
