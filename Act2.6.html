@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2_6</title>
+        <link href="ibs.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="js/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <div id="valoraciones">
+            <div id=”critica” valoracion=7>La Comunidad del Anillo</div>
+            <div id=”critica” valoracion=8>Las Dos Torres</div>
+            <div id=”critica” valoracion=8>El Retorno del Rey</div>
+            <div id=”critica” valoracion=5>Little Nicky</div>
+            <div id=”critica” valoracion=5>Insidious</div>
+
+            <select id="puntuacion" size="1" >
+                <option value=-1>--Todas--</option>
+                <option value=0>0</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
+
+            <button id="filtrar">Filtrar</button><br>
+
+        </div>
+        <script>
+            $("#filtrar").click(function(){
+                console.log("click");
+                $("#valoraciones div").each(function(){
+                    valoracion = $(this).attr("valoracion");
+                    puntuacion = $("#puntuacion").val();
+                    
+                    console.log(valoracion + " - " + puntuacion);
+
+                    if(valoracion == puntuacion){
+                        $(this).show();
+                    }else if(puntuacion == -1){
+                        $(this).show();
+                    }else{
+                        $(this).hide();
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
