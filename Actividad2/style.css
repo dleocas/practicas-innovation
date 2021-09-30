@@ -1,0 +1,185 @@
+
+.body{
+    margin: auto;
+}
+.header{
+    position: relative;
+    height: 80px;
+}
+
+.logo{
+    position: absolute;
+    height: 80px;
+    width: 337px;
+    top: 0;
+    left: 0;
+    float: left;
+}
+.profile{
+    position: absolute;
+    height: 100px;
+    width: 86px;
+    right: 390px;
+    float: right;
+    
+}
+.profiledot {
+    height: 30px;
+    width: 30px;
+    top: 0.25vw;
+    right: -1.05vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 81, 59);
+    border-radius: 50%;
+  }
+  .profilenumber {
+    position: absolute;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .profiletext{
+    position: absolute;
+    height: 50px;
+    width: 170px;
+    top: 35px;
+    right: 210px;
+    float: right;
+    font-size: large;
+    font-weight: bold;
+  }
+  .setting{
+    position: absolute;
+    width: 41;
+    height: 41;
+    top: 10px;
+    right: 140px;
+    float: right;
+  }
+
+  .settingtext{
+    position: absolute;
+    height: 20px;
+    width: 50px;
+    top: 55px;
+    right: 150px;
+    float: right;
+    font-family: arial;
+    font-weight: bold;
+  }
+
+  .logout{
+    position: absolute;
+    height: 41px;
+    width: 47px;
+    top: 8.5px;
+    right: 30px;
+    float: right;
+  }
+
+  .logouttext{
+    position: relative;
+    height: 20px;
+    width: 50px;
+    top: 55px;
+    right: 37px;
+    float: right;
+    font-family: arial;
+    font-weight: bold;
+    color: tomato;
+  }
+
+  .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .line{
+    position: relative;
+    width: 99%;
+    height: 3px;
+    border: 3px;
+    background-color: lightgray;
+  }
+  .itemlist{
+    max-width: 870px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card{
+    height: 125px;
+    width: 250px;
+    position: relative;
+    border: 1px solid rgb(186, 199, 212);
+    background-color: rgb(244, 245, 247);
+    margin: 15px 10px 15px 10px;
+  }
+
+  .menuitempicture{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .menuitemtext{
+    position: absolute;
+    height: 75px;
+    width: 125px;
+    top: 75px;
+    right: 10px;
+    float: right;
+    text-align: end;
+    font-size: larger;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgb(140, 140, 140);
+  }
+
+  .menudot {
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 81, 59);
+    border-radius: 50%;
+  }
+
+  .menuitemrectangle{
+    height: 30px;
+    width: 125px;
+    top: 0;
+    right: 0;
+    float: right;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 81, 59);
+    color: white;
+  }
+  .menuitemrectangle{
+    position: absolute;
+    font-size: larger;
+    font-family: Arial;
+    font-weight: bold;
+  }
+
+  
