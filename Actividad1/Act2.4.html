@@ -3,49 +3,6 @@
     <head>
         <title>2_4</title>
         <link href="ibs.css" media="all" rel="stylesheet" type="text/css" />
-        <style>
-            .container{
-                display: block;
-                position: relative;
-            }
-            .block{
-                width: 30%;
-                display: block;
-                margin-top: 20px;
-                margin-left: auto;
-                margin-right: auto;
-                border: 1px solid;
-                position: relative;
-                text-align: center;
-            }
-            .capa1{
-                width: 80%;
-                height: 50%;
-                margin-top: 20px;
-                padding: 10% 10%;
-                border: 1px solid black;
-                display: block;
-                position: relative;
-            }
-            .capa2{
-                width: 100%;
-                height: 50%;
-                border: 1px solid blue;
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            .capa3{
-                width: 100%;
-                height: 50%;
-                border: 1px solid red;
-                display: none;
-                position: absolute;
-                top: 50%;
-                left: 0;
-            }
-        </style>
     </head>
     <body>
         <div class="container">
@@ -117,12 +74,12 @@
                 alert(str);
             }
             function checkRadioValues(){
-                var radios = document.querySelectorAll('input[name="radio"]');
+                const radios = document.querySelectorAll('input[name="radio"]');
                 var str = "";
 
                 console.log(radios.length);
 
-                for(var radio of radios){
+                for(const radio of radios){
                     if(radio.checked){
                         str = radio.value;
                         break;
@@ -146,10 +103,10 @@
             }
 
             function moverOpcion(){
-                var combobox1 = document.getElementById("marcas");
-                var combobox2 = document.getElementById("marcas2");
-                var index = combobox1.selectedIndex;
-                var option = combobox1.options[index];
+                const combobox1 = document.getElementById("marcas");
+                const combobox2 = document.getElementById("marcas2");
+                const index = combobox1.selectedIndex;
+                const option = combobox1.options[index];
                 combobox1.removeChild(option);
                 combobox2.appendChild(option);
             }

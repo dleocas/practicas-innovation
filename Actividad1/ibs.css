@@ -1,3 +1,44 @@
+body{
+                
+    margin:0;
+}
+.t1{
+    width: 790px; 
+    height: 500px;
+    background-color: #F2EBD9; 
+    border: 1px solid; 
+    border-color: #003281;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.t2{
+    border: 1px solid;
+    border-color: black;
+    background-color: #003281;
+    z-index: 1;
+}
+.text{
+    color: white;
+}
+.capaerror{
+    width: 790px; 
+    height: 500px;
+    text-align: center;
+    background-color: white;
+    background-size: auto;
+    color: red;
+    border: 1px solid;
+    border-color: red;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
 .titulo{
     color: blue;
     font-family: Arial;
@@ -44,4 +85,56 @@ li:hover{
     font-family: Verdana;
     font-size: 12px;
     text-decoration: underline;
+}
+
+.container{
+    display: block;
+    position: relative;
+}
+.block{
+    width: 30%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    position: relative;
+    text-align: center;
+}
+.capa1{
+    width: 80%;
+    height: 50%;
+    margin-top: 20px;
+    padding: 10% 10%;
+    border: 1px solid black;
+    display: block;
+    position: relative;
+}
+.capa2{
+    width: 100%;
+    height: 50%;
+    border: 1px solid blue;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.capa3{
+    width: 100%;
+    height: 50%;
+    border: 1px solid red;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.boton2{
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+.boton2:hover{
+    opacity: 0;
 }
