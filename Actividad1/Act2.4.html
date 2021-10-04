@@ -58,7 +58,7 @@
         </div>
         <script>
             function checkCheckBoxValues(){
-                var str = "";
+                let str = "";
                 if(document.getElementById("check1").checked){
                     str += document.getElementById("check1").value;
                 }
@@ -75,16 +75,13 @@
             }
             function checkRadioValues(){
                 const radios = document.querySelectorAll('input[name="radio"]');
-                var str = "";
+                let str = "";
 
-                console.log(radios.length);
-
-                for(const radio of radios){
+                radios.forEach(function(radio){
                     if(radio.checked){
                         str = radio.value;
-                        break;
                     }
-                }
+                });
 
                 if(str.length == 0){
                     str = "No hay ninguna opción seleccionada";

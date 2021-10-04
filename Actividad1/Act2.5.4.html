@@ -59,7 +59,7 @@
         </div>
         <script>
             $("#boton1").click(function(){
-                var str = "";
+                let str = "";
                 if($("#check1").prop("checked")){
                     str += $("#check1").val();
                 }
@@ -76,16 +76,12 @@
             });
 
             $("#boton2").click(function(){
-                const radios = $("input:radio[name=radio]");
-                var str = "";
-
-                for(var i = 0; i < radios.length; i++){
-                    if($(radios[i]).prop("checked")){
-                        str = $(radios[i]).val();
-                        break;
+                let str = "";
+                $("input:radio[name=radio]").each(function(index, radio){
+                    if($(radio).prop("checked")){
+                        str = $(radio).val();
                     }
-                } 
-
+                });
                 if(str.length == 0){
                     str = "No hay ninguna opción seleccionada";
                 }
@@ -103,7 +99,7 @@
             });
 
             $("#marcas").dblclick(function(){
-                var option = $("#marcas").find("option:selected");
+                let option = $("#marcas").find("option:selected");
                 $("#marcas").remove(option);
                 $("#marcas2").append(option);
             });

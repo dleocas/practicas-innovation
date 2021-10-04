@@ -49,8 +49,8 @@
                 const emailText = String(email);
                 const passwordText = String(password);
 
-                var emailError = false;
-                var passwordError = false;
+                let emailError = false;
+                let passwordError = false;
 
                 if(!emailText.includes("@") || !emailText.includes(".") || emailText.length < 6){
                     emailError = true;
@@ -61,7 +61,7 @@
                 }
 
                 if(emailError || passwordError){
-                    var errorMessage = "";
+                    let errorMessage = "";
                     $(document).ready(function(){
                         $(".capaerror").css("display", "inherit");
                     });
