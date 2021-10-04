@@ -33,12 +33,9 @@
         </div>
         <script>
             $("#filtrar").click(function(){
-                console.log("click");
                 $("#valoraciones div").each(function(){
                     valoracion = $(this).attr("valoracion");
                     puntuacion = $("#puntuacion").val();
-                    
-                    console.log(valoracion + " - " + puntuacion);
 
                     if(valoracion == puntuacion){
                         $(this).show();
