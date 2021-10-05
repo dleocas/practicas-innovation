@@ -2,66 +2,68 @@
 <html>
     <head>
         <title>Act1</title>
+        <meta CHARSET="UTF-8">
         <link href="style.css" media="all" rel="stylesheet" type="text/css" />
         <script src="https://kit.fontawesome.com/e277bba706.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
-        <div class="header">
-            <img src="images/logo.png" class="logo">
-            <div class="profile">
-                <img src="images/profile.png" class="profilepicture">
-                <div class="profiledot">
-                    <span class="profilenumber">2</span>
-                </div>
-            </div>
-            <span class="profiletext">Cordelia Carpenter</span>
-            <img src="images/setting.png" class="setting">
-            <span class="settingtext">SETTINGS</span>
-            <img src="images/logout.png" class="logout">
-            <span class="logouttext">LOGOUT</span>
-        </div>
+        
         <div class="container">
+            <div class="header">
+                <img src="images/logo.png" alt="logo" class="logo">
+                <div class="profile">
+                    <img src="images/profile.png" alt="profile picture" class="profilepicture">
+                    <div class="profiledot">
+                        <span class="profilenumber">6</span>
+                    </div>
+                </div>
+                <span class="profiletext">Cordelia Carpenter</span>
+                <img src="images/setting.png" alt="settings" class="setting">
+                <span class="settingtext">SETTINGS</span>
+                <img src="images/logout.png" alt="logout" class="logout">
+                <span class="logouttext">LOGOUT</span>
+            </div>
             <hr class="line">
             <div class="itemlist">
                 <div class="card">
-                    <img src="images/menu_item1.png" class="menuitempicture">
+                    <img src="images/menu_item1.png" alt="alerts and messaging" class="menuitempicture">
                     <div class="menudot">
                         <span class="profilenumber">6</span>
                     </div>
                     <span class="menuitemtext">ALERTS AND MESSAGING</span>
                 </div>
                 <div class="card">
-                    <img src="images/menu_item2.png" class="menuitempicture">
+                    <img src="images/menu_item2.png" alt="remainder calendar" class="menuitempicture">
                     <div class="menudot">
                         <span class="profilenumber">1</span>
                     </div>
                     <span class="menuitemtext">REMAINDERS CALENDAR</span>
                 </div>
                 <div class="card">
-                    <img src="images/menu_item3.png" class="menuitempicture">
+                    <img src="images/menu_item3.png" alt="circle of care" class="menuitempicture">
                     <div class="menudot">
                         <span class="profilenumber">2</span>
                     </div>
                     <span class="menuitemtext">CIRCLE OF CARE</span>
                 </div>
                 <div class="card">
-                    <img src="images/menu_item4.png" class="menuitempicture">
+                    <img src="images/menu_item4.png" alt="daily care-o-gram" class="menuitempicture">
                     <div class="menudot">
                         <span class="profilenumber">1</span>
                     </div>
                     <span class="menuitemtext">DAILY CARE-O-GRAM</span>
                 </div>
                 <div class="card">
-                    <img src="images/menu_item5.png" class="menuitempicture">
+                    <img src="images/menu_item5.png" alt="repository" class="menuitempicture">
                     <span class="menuitemtext">REPOSITORY</span>
                 </div>
                 <div class="card">
-                    <img src="images/menu_item6.png" class="menuitempicture">
+                    <img src="images/menu_item6.png" alt="reports" class="menuitempicture">
                     <span class="menuitemtext">REPORTS</span>
                 </div>
                 <div class="card">
-                    <img src="images/menu_item7.png" class="menuitempicture">
+                    <img src="images/menu_item7.png" alt="my points" class="menuitempicture">
                     <div class="menuitemrectangle">
                         <span class="menuitemtextrectangle">Total points 725</span>
                     </div>
@@ -70,7 +72,7 @@
             </div>
             <div class="alerts">
                 <div class="alertbox">
-                    <img src="images/menu_item1.png" class="alertboxpicture">
+                    <img src="images/menu_item1.png" alt="alerts and messaging" class="alertboxpicture">
                     <span class="alertboxtext">ALERTS AND MESSAGING</span>
                 </div>
                 <div class="alertformbox">
@@ -171,11 +173,14 @@
             </div>
             <div class="reminders"> 
                 <div class="remindersbox">
-                    <img src="images/menu_item2.png" class="alertboxpicture">
+                    <img src="images/menu_item2.png" alt="remainders calendar" class="alertboxpicture">
                     <span class="alertboxtext">REMINDERS CALENDAR</span>
-                    <span class="alertboxtext2">DAILY / WEEKLY / MONTHLY</span>
-                    <i class="fas fa-th-large"></i>
-                    <i class="fas fa-th-list"></i>
+                    <div class="alertboxright">
+                        <span class="alertboxtext2">DAILY / WEEKLY / MONTHLY</span>
+                        <i class="fas fa-th-large"></i>
+                        <i class="fas fa-th-list"></i>
+                    </div>
+                    
                 </div>
                 <div class="reminderformbox">
                     <div class="reminderboxleft">
@@ -290,6 +295,10 @@
                                     <td>29</td>
                                     <td>30</td>
                                     <td>31</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
 
                             </table>
@@ -299,7 +308,7 @@
             </div>
             <div class="circle">
                 <div class="circle-box">
-                    <img src="images/menu_item3.png" class="alertboxpicture">
+                    <img src="images/menu_item3.png" alt="circle of care" class="alertboxpicture">
                     <span class="alertboxtext">CIRCLE OF CARE</span>
                 </div>
                 <div class="circle-form-box">
@@ -309,13 +318,70 @@
                         </div>
                         <div class="circle-form-box-top-menu">
                             <span class="circle-form-box-top-menu-text">MY CIRCLE OF CARE</span>
+                            <div class="circle-form-box-top-menu-selected"></div>
                         </div>
                         <div class="circle-form-box-top-menu">
                             <span class="circle-form-box-top-menu-text">PENDING</span>
+                            <div class="circle-form-box-top-menu-dot">
+                                <span class="circle-form-box-top-menu-dot-text">2</span>
+                            </div>
                         </div>
                     </div>
                     <div class="circle-form-box-bottom">
+                        <div class="circle-form-box-bottom-box-title">
+                            <span class="circle-form-box-bottom-title">For organize Drag & Drop in the groups</span>
+                        </div>
+                        <div class="circle-form-box-bottom-item-list">
+                            <div class="circle-form-box-bottom-item-list-card">
+                                <div class="circle-form-box-bottom-item-list-card-left-box-red"></div>
+                                <img src="images/menu_item_person1.png" alt="profile picture" class="circle-form-box-bottom-item-list-card-picture">
+                                <span class="circle-form-box-bottom-item-list-card-name">Francies Fisher Williams</span>
+                                <span class="circle-form-box-bottom-item-list-card-job">Graphic Designer</span>
+                                <div class="circle-form-box-bottom-item-list-card-bottom-box-red">
+                                    <span class="circle-form-box-bottom-item-list-card-bottom-box-red-text">Send Message</span>
+                                </div>
+                            </div>
 
+                            <div class="circle-form-box-bottom-item-list-card">
+                                <div class="circle-form-box-bottom-item-list-card-left-box-green"></div>
+                                <img src="images/menu_item_person2.png" alt="profile picture" class="circle-form-box-bottom-item-list-card-picture">
+                                <span class="circle-form-box-bottom-item-list-card-name">Maria Kraft Smith</span>
+                                <span class="circle-form-box-bottom-item-list-card-job">Doctor</span>
+                                <div class="circle-form-box-bottom-item-list-card-bottom-box-green">
+                                    <span class="circle-form-box-bottom-item-list-card-bottom-box-green-text">Send Message</span>
+                                </div>
+                            </div>
+
+                            <div class="circle-form-box-bottom-item-list-card">
+                                <div class="circle-form-box-bottom-item-list-card-left-box-red"></div>
+                                <img src="images/menu_item_person3.png" alt="profile picture" class="circle-form-box-bottom-item-list-card-picture">
+                                <span class="circle-form-box-bottom-item-list-card-name">Dolores Vidal Taylor</span>
+                                <span class="circle-form-box-bottom-item-list-card-job">Comercial</span>
+                                <div class="circle-form-box-bottom-item-list-card-bottom-box-red">
+                                    <span class="circle-form-box-bottom-item-list-card-bottom-box-red-text">Send Message</span>
+                                </div>
+                            </div>
+
+                            <div class="circle-form-box-bottom-item-list-card">
+                                <div class="circle-form-box-bottom-item-list-card-left-box-red"></div>
+                                <img src="images/menu_item_person4.png" alt="profile picture" class="circle-form-box-bottom-item-list-card-picture">
+                                <span class="circle-form-box-bottom-item-list-card-name">Robbie Walker Jr.</span>
+                                <span class="circle-form-box-bottom-item-list-card-job">CEO NY Memorial</span>
+                                <div class="circle-form-box-bottom-item-list-card-bottom-box-red">
+                                    <span class="circle-form-box-bottom-item-list-card-bottom-box-red-text">Send Message</span>
+                                </div>
+                            </div>
+
+                            <div class="circle-form-box-bottom-item-list-card">
+                                <div class="circle-form-box-bottom-item-list-card-left-box-green"></div>
+                                <img src="images/menu_item_person5.png" alt="profile picture" class="circle-form-box-bottom-item-list-card-picture">
+                                <span class="circle-form-box-bottom-item-list-card-name">Vanessa Herrera Simons</span>
+                                <span class="circle-form-box-bottom-item-list-card-job">Nurse</span>
+                                <div class="circle-form-box-bottom-item-list-card-bottom-box-green">
+                                    <span class="circle-form-box-bottom-item-list-card-bottom-box-green-text">Send Message</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
