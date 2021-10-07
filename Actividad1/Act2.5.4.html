@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2_5_4</title>
+        <link href="ibs.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="js/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="block">
+                <input type="checkbox" id="check1" value="Texto checkbox 1. ">
+                <label>Texto 1</label><br>
+                <input type="checkbox" id="check2" value="Texto checkbox 2. ">
+                <label>Texto 2</label><br>
+                <input type="checkbox" id="check3" value="Texto checkbox 3. ">
+                <label>Texto 3</label><br><br>
+                <button id="boton1" >Valor checks</button><br>
+            </div>
+            <div class="block">
+                <input type="radio" id="radio1" name="radio" value="Texto radio 1">
+                <label>Texto 1</label><br>
+                <input type="radio" id="radio2" name="radio" value="Texto radio 2">
+                <label>Texto 2</label><br>
+                <input type="radio" id="radio3" name="radio" value="Texto radio 3">
+                <label>Texto 3</label><br>
+                <input type="radio" id="radio4" name="radio" value="Texto radio 4">
+                <label>Texto 4</label><br>
+                <input type="radio" id="radio5" name="radio" value="Texto radio 5">
+                <label>Texto 5</label><br><br>
+                <button id="boton2">Valor radio</button><br>
+            </div>
+            <div class="capa1">
+                <div class="capa2" id="capa2">
+
+                </div>
+                <div class="capa3" id="capa3">
+
+                </div>
+            </div>
+            <div class="block">
+                <select id="marcas" size="4" >
+                    <option>Volvo</option>
+                    <option>Saab</option>
+                    <option>Mercedes</option>
+                    <option>Audi</option>
+                    <option>Toyota</option>
+                    <option>Nissan</option>
+                </select>
+
+                <select id="marcas2" size="4">
+                    <option>Ferrari</option>
+                    <option>Maseratti</option>
+                    <option>Honda</option>
+                    <option>Kia</option>
+                    <option>Ford</option>
+                </select>
+
+            </div>
+        </div>
+        <script>
+            $("#boton1").click(function(){
+                let str = "";
+                if($("#check1").prop("checked")){
+                    str += $("#check1").val();
+                }
+                if($("#check2").prop("checked")){
+                    str += $("#check2").val();
+                }
+                if($("#check3").prop("checked")){
+                    str += $("#check3").val();
+                }
+                if(str.length == 0){
+                    str += "No hay ninguna opción seleccionada";
+                }
+                alert(str);
+            });
+
+            $("#boton2").click(function(){
+                let str = "";
+                $("input:radio[name=radio]").each(function(index, radio){
+                    if($(radio).prop("checked")){
+                        str = $(radio).val();
+                    }
+                });
+                if(str.length == 0){
+                    str = "No hay ninguna opción seleccionada";
+                }
+                alert(str);
+            });
+
+            $("#capa2").click(function(){
+                $("#capa2").css("display", "none");
+                $("#capa3").css("display", "block");
+            });
+
+            $("#capa3").click(function(){
+                $("#capa2").css("display", "block");
+                $("#capa3").css("display", "none");
+            });
+
+            $("#marcas").dblclick(function(){
+                let option = $("#marcas").find("option:selected");
+                $("#marcas").remove(option);
+                $("#marcas2").append(option);
+            });
+        </script>
+    </body>
+</html>

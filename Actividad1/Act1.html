@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Default</title>
+        <link href="ibs.css" media="all" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="t1">
+            <table>
+                <tr>
+                    <td>
+                        <p class="titulo">Login</p>
+                        <div class="t2">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label class="small">Email:</label><br>
+                                        <input type="text" name="email" id="emailInput"><br>
+                                        <label class="small">Contraseña</label><br>
+                                        <input type="password" name="password" id="passwordInput"><br>
+                                        <button class="boton" onclick="check()" type="button">Aceptar</button>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="capaerror" id="capaerror">
+            <p class="smallrojo" id="errorMessage"></p>
+        </div>
+        <script>
+        function openWindow(){
+            window.open('https://www.google.es');
+        }
+        </script>
+
+        <script>
+            function check(){
+                const email = document.getElementById("emailInput").value;
+                const password = document.getElementById("passwordInput").value;
+
+                const emailText = String(email);
+                const passwordText = String(password);
+
+                let emailError = false;
+                let passwordError = false;
+
+                if(!emailText.includes("@") || !emailText.includes(".") || emailText.length < 6){
+                    emailError = true;
+                }
+
+                if(passwordText.search(/\d/) == -1 || passwordText.length < 4){
+                    passwordError = true;
+                }
+
+                if(emailError || passwordError){
+                    let errorMessage = "";
+                    document.getElementById("capaerror").style.display = "inherit";
+                    if(emailError){
+                        errorMessage = "El email no es válido. ";
+                    }
+                    if(passwordError){
+                        errorMessage += "La contraseña no es válida."
+                    }
+                    document.getElementById("errorMessage").innerText = errorMessage;
+                }
+            }
+            
+
+        </script>
+    </body>
+</html>

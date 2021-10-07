@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2.5.1</title>
+        <link href="ibs.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="js/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <div class="t1">
+            <table>
+                <tr>
+                    <td>
+                        <p class="titulo">Login</p>
+                        <div class="t2">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label class="small">Email:</label><br>
+                                        <input type="text" name="email" id="emailInput"><br>
+                                        <label class="small">Contraseña</label><br>
+                                        <input type="password" name="password" id="passwordInput"><br>
+                                        <button class="boton" type="button">Aceptar</button>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="capaerror" id="capaerror">
+            <p class="smallrojo" id="errorMessage"></p>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".boton").click(function(){
+                    openWindow();
+                });
+            });
+        
+        function openWindow(){
+            window.open('https://www.google.es');
+        }
+
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2_4</title>
+        <link href="ibs.css" media="all" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="block">
+                <input type="checkbox" id="check1" value="Texto checkbox 1. ">
+                <label>Texto 1</label><br>
+                <input type="checkbox" id="check2" value="Texto checkbox 2. ">
+                <label>Texto 2</label><br>
+                <input type="checkbox" id="check3" value="Texto checkbox 3. ">
+                <label>Texto 3</label><br><br>
+                <button onclick="checkCheckBoxValues()">Valor checks</button><br>
+            </div>
+            <div class="block">
+                <input type="radio" id="radio1" name="radio" value="Texto radio 1">
+                <label>Texto 1</label><br>
+                <input type="radio" id="radio2" name="radio" value="Texto radio 2">
+                <label>Texto 2</label><br>
+                <input type="radio" id="radio3" name="radio" value="Texto radio 3">
+                <label>Texto 3</label><br>
+                <input type="radio" id="radio4" name="radio" value="Texto radio 4">
+                <label>Texto 4</label><br>
+                <input type="radio" id="radio5" name="radio" value="Texto radio 5">
+                <label>Texto 5</label><br><br>
+                <button onclick="checkRadioValues()">Valor radio</button><br>
+            </div>
+            <div class="capa1">
+                <div class="capa2" id="capa2" onclick="clickTop()">
+
+                </div>
+                <div class="capa3" id="capa3" onclick="clickDown()">
+
+                </div>
+            </div>
+            <div class="block">
+                <select id="marcas" size="4" ondblclick="moverOpcion()">
+                    <option>Volvo</option>
+                    <option>Saab</option>
+                    <option>Mercedes</option>
+                    <option>Audi</option>
+                    <option>Toyota</option>
+                    <option>Nissan</option>
+                </select>
+
+                <select id="marcas2" size="4">
+                    <option>Ferrari</option>
+                    <option>Maseratti</option>
+                    <option>Honda</option>
+                    <option>Kia</option>
+                    <option>Ford</option>
+                </select>
+
+            </div>
+        </div>
+        <script>
+            function checkCheckBoxValues(){
+                let str = "";
+                if(document.getElementById("check1").checked){
+                    str += document.getElementById("check1").value;
+                }
+                if(document.getElementById("check2").checked){
+                    str += document.getElementById("check2").value;
+                }
+                if(document.getElementById("check3").checked){
+                    str += document.getElementById("check3").value;
+                }
+                if(str.length == 0){
+                    str += "No hay ninguna opción seleccionada";
+                }
+                alert(str);
+            }
+            function checkRadioValues(){
+                const radios = document.querySelectorAll('input[name="radio"]');
+                let str = "";
+
+                radios.forEach(function(radio){
+                    if(radio.checked){
+                        str = radio.value;
+                    }
+                });
+
+                if(str.length == 0){
+                    str = "No hay ninguna opción seleccionada";
+                }
+                alert(str);
+            }
+
+            function clickTop(){
+                document.getElementById("capa2").style.display = "none";
+                document.getElementById("capa3").style.display = "block";
+            }
+
+            function clickDown(){
+                document.getElementById("capa2").style.display = "block";
+                document.getElementById("capa3").style.display = "none";
+            }
+
+            function moverOpcion(){
+                const combobox1 = document.getElementById("marcas");
+                const combobox2 = document.getElementById("marcas2");
+                const index = combobox1.selectedIndex;
+                const option = combobox1.options[index];
+                combobox1.removeChild(option);
+                combobox2.appendChild(option);
+            }
+        </script>
+    </body>
+</html>
