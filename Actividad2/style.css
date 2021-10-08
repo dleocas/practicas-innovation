@@ -1,33 +1,32 @@
 
-.body{
+  .body{
     margin: auto;
-}
-.header{
+
+  }
+  .header{
     position: relative;
     height: 80px;
-}
+  }
 
-.logo{
+  .logo{
     position: absolute;
-    height: 80px;
-    width: 337px;
     top: 0;
     left: 0;
     float: left;
-}
-.profile{
+  }
+  .profile{
     position: absolute;
     height: 100px;
-    width: 86px;
+    width: 100px;
     right: 390px;
     float: right;
     
-}
-.profiledot {
+  }
+  .profiledot {
     height: 30px;
     width: 30px;
-    top: 0.25vw;
-    right: -1.05vw;
+    top: 5px;
+    right: 3px;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -54,8 +53,8 @@
   }
   .setting{
     position: absolute;
-    width: 41;
-    height: 41;
+    width: 41px;
+    height: 41px;
     top: 10px;
     right: 140px;
     float: right;
@@ -71,6 +70,46 @@
     font-family: arial;
     font-weight: bold;
   }
+
+  .fa-bars{
+    zoom: 2.25;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    right: 5px;
+    float: right;
+    display: none !important;
+  }
+
+  .options {
+    height: 15px;
+    width: 15px;
+    top: -15px;
+    position: relative;
+    display: inline-block;
+}
+  .options-content {
+    top: 20px;  
+    left: -20px;   
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.options-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.options:hover .options-content {
+    display: block;
+}
 
   .logout{
     position: absolute;
@@ -93,12 +132,6 @@
     color: tomato;
   }
 
-  .container{
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-
   .line{
     position: relative;
     width: 100%;
@@ -107,20 +140,17 @@
     background-color: lightgray;
   }
   .itemlist{
-    max-width: 870px;
     height: auto;
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .card{
-    height: 125px;
-    width: 250px;
+    
     position: relative;
     border: 1px solid rgb(186, 199, 212);
     background-color: rgb(244, 245, 247);
@@ -160,6 +190,13 @@
     align-items: center;
     background-color: rgb(250, 81, 59);
     border-radius: 50%;
+  }
+
+  .menudotnumber{
+    position: absolute;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
   }
 
   .menuitemrectangle{
@@ -220,8 +257,6 @@
 
   .alertformbox{
     position: relative;
-    height: 615px;
-    width: 800px;
     top: 30px;
     margin-bottom: 50px;
     border: 1px solid rgb(223, 224, 229);
@@ -319,7 +354,7 @@
   .alertboxmenuiteminput{
     position: absolute;
     height: 20px;
-    width: 175px;
+    width: 100%;
   }
 
   .fa-search{
@@ -388,7 +423,7 @@
     font-family: Arial;
     color: rgb(140, 140, 140);
   }
-  
+
   .alertboxitemmailtitle{
     height: 20px;
     width: 280px;
@@ -536,16 +571,57 @@
     border: 1px solid rgb(223, 224, 229);
   }
 
+  .alertboxright{
+    height: 30px;
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    float: right;
+  }
+
+  .alertboxtext2{
+    position: absolute;
+    height: 30px;
+    width: 180px;
+    top: 10px;
+    left: 0px;
+    float: left;
+    font-size: small;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgb(140, 140, 140);
+  }
+
+  .fa-th-large{
+    height: 30px;
+    width: 30px;
+    float: right;
+    top: 8px;
+    right: 30px;
+    position: absolute;
+    color: rgb(140, 140, 140);
+  }
+
+  .fa-th-list{
+    height: 30px;
+    width: 30px;
+    float: right;
+    top: 8px;
+    right: 0px;
+    position: absolute;
+    color: rgb(140, 140, 140);
+  }
+
+
+
   .reminderformbox{
     position: relative;
-    height: 400px;
-    width: 800px;
     top: 30px;
     margin-bottom: 50px;
     border: 2px solid rgb(223, 224, 229);
     display: flex;
     justify-content: center;
-  
+
   }
 
   .reminderboxleft{
@@ -602,7 +678,877 @@
     left: 17px;
     color: white;
   }
-  
+
+  .reminder-box-rectangle-text1{
+    height: 20px;
+    width: 120px;
+    top: 7px;
+    left: 55px;
+    position: absolute;
+    color: white;
+    font-size: large;
+    font-family: Arial;
+
+  }
+
+  .reminder-box-rectangle-text2{
+    height: 20px;
+    width: 170px;
+    top: 27px;
+    left: 55px;
+    position: absolute;
+    color: white;
+    font-size: 0.9em;
+    font-family: Arial;
+
+  }
+
+  .reminder-box-rectangle-2{
+    position: absolute;
+    height: 50px;
+    width: 80%;
+    top: 135px;
+    background-color: rgb(255, 80, 60);
+
+  }
+
+  .fa-calendar-alt{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 8px;
+    left: 10px;
+    color: white;
+    zoom: 1.5;
+  }
+
+  .reminder-box-rectangle-closerectangle{
+    height: 20px;
+    width: 20px;
+    float: right;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    opacity: 0.25;
+  }
+
+  .fa-times{
+    height: 20px;
+    width: 20px;
+    float: right;
+    top: 2px;
+    right: -4.5px;
+    position: absolute;
+    color: white;
+  }
+
+  .reminder-box-rectangle-3{
+    position: absolute;
+    height: 180px;
+    width: 80%;
+    top: 180px;
+    background-color: rgb(225, 225, 225);
+  }
+
+  .reminder-box-rectangle-3-date{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    top: 13px;
+    left: 20px;
+    color: rgb(140, 140, 140);
+    font-weight: bold;
+    font-family: Arial;
+  }
+
+  .reminder-box-rectangle-3-time{
+    position: absolute;
+    height: 20px;
+    width: 70px;
+    top: 10px;
+    left: 125px;
+    float: left;
+    color: rgb(100, 100, 100);
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Arial;
+  }
+
+  .reminder-box-rectangle-3-text{
+    position: absolute;
+    height: 20px;
+    width: 90%;
+    top: 40px;
+    left: 20px;
+    color: rgb(140, 140, 140);
+    font-size: small;
+    font-family: Arial;
+  }
+
+  .reminder-box-rectangle-3-change{
+    height: 30px;
+    width: 75px;
+    top: 135px;
+    left: 20px;
+    float: left;
+    position: absolute;
+    background-color: rgb(0, 220, 190);
+  }
+
+  .reminder-box-rectangle-3-done{
+    height: 30px;
+    width: 75px;
+    top: 135px;
+    right: 20px;
+    float: right;
+    position: absolute;
+    background-color: rgb(255, 80, 60);
+  }
+
+  .reminder-box-rectangle-3-change-text{
+    height: 20px;
+    width: 100%;
+    top: 9px;
+    text-align: center;
+    position: absolute;
+    font-weight: 600;
+    font-size: small;
+    font-family: Arial;
+    color: rgb(10, 130, 140);
+  }
+
+  .reminder-box-rectangle-3-done-text{
+    height: 20px;
+    width: 100%;
+    top: 9px;
+    text-align: center;
+    position: absolute;
+    font-size: small;
+    font-weight: 600;
+    font-family: Arial;
+    color: white;
+  }
+
+  .reminder-box-right-top{
+    height: 50px;
+    width: 90%;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+  }
+
+  .fa-chevron-left{
+    height: 10px;
+    width: 10px;
+    zoom: 3;
+    color: rgb(140, 140, 140);
+  }
+
+  .reminder-box-right-top-text{
+    height: 20px;
+    width: 100%;
+    top: 10px;
+    left: -8px;
+    text-align: center;
+    position: absolute;
+    font-weight:bolder;
+    font-size: x-large;
+    font-family: Arial;
+    color: rgb(140, 140, 140);
+  }
+
+  .chevron-2{
+    height: 10px;
+    width: 10px;
+    zoom: 3;
+    right: 10px;
+    float: right;
+    color: rgb(140, 140, 140);
+  }
+
+  .reminder-box-right-calendar{
+    height: 280px;
+    width: 90%;
+    top: 75px;
+    left: 10px;
+    position: absolute;
+  }
+
+  .reminder-box-right-table{
+    width: 80%;
+    left: 40px;
+    position: absolute;
+    border-collapse: collapse;
+  }
+
+  th{
+    background-color: rgb(0, 220, 190);
+  }
+
+  th,td{
+    height: 45px;
+    width: 45px;
+    position: relative;
+    text-align: center;
+    font-family: Arial;
+    font-size: large;
+    color: rgb(100, 100, 100)
+  }
+
+  .table-dot-selected-border {
+  height: 45px;
+  width: 45px;
+  top: 1px;
+  left: 1px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(100, 100, 100);
+  border-radius: 50%;
+  }
+
+  .table-dot-selected {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 81, 59);
+  border-radius: 50%;
+  }
+
+  .table-dot-unselected {
+    height: 35px;
+    width: 35px;
+    top: 6px;
+    left: 6px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 81, 59);
+    border-radius: 50%;
+    opacity: 0.6;
+  }
+
+  .table-dot-number{
+    color: white;
+  }
+
+  .circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .circle-box{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    margin-top: 25px;
+    background-color: rgb(244, 245, 247);
+    border: 1px solid rgb(223, 224, 229);
+  }
+
+  .circle-form-box{
+    height: auto;
+    position: relative;
+    top: 30px;
+    margin-bottom: 50px;
+    border: 2px solid rgb(223, 224, 229);
+    display: block;
+    justify-content: center;
+
+  }
+
+  .circle-form-box-top{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    
+  }
+
+  .circle-form-box-top-menu{
+    position: relative;
+    height: 50px;
+    width: 33.3%;
+    border: 1px solid rgb(223, 224, 229);
+  }
+  .circle-form-box-bottom{
+    position: relative;
+    height: auto;
+    width: 100%;
+    border: 1px solid rgb(223, 224, 229);
+    background-color: rgb(240, 240, 240);
+  }
+
+  .circle-form-box-top-menu-text{
+    position: absolute;
+    height: 25px;
+    width: 100%;
+    top: 15px;
+    text-align: center;
+    font-size: larger;
+    font-family: Arial;
+    color: rgb(186, 199, 212);
+  }
+
+  .circle-form-box-top-menu-dot {
+    height: 25px;
+    width: 25px;
+    top: -15px;
+    right: 10%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 81, 59);
+    border-radius: 50%;
+  }
+
+  .circle-form-box-top-menu-dot-text {
+    position: absolute;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .circle-form-box-top-menu-selected{
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    background-color: rgb(250, 81, 59);
+
+  }
+
+  .circle-form-box-bottom-box-title{
+    height: 30px;
+    width: 60%;
+    top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: absolute;
+    background-color: rgb(223, 224, 229);
+  }
+
+  .circle-form-box-bottom-title{
+    height: 20px;
+    width: 100%;
+    top: 5px;
+    position: absolute;
+    font-family: Arial;
+    text-align: center;
+    color: rgb(100, 100, 100);
+  }
+
+  .circle-form-box-bottom-item-list{
+    max-width: 700px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .circle-form-box-bottom-item-list-card{
+    height: 150px;
+    width: 300px;
+    position: relative;
+    border: 1px solid rgb(186, 199, 212);
+    background-color: white;
+    margin: 20px 24px 20px 24px;
+  }
+
+  .circle-form-box-bottom-item-list-card-left-box-red{
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    background-color: rgb(250, 81, 59);
+  }
+
+  .circle-form-box-bottom-item-list-card-picture{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+
+  }
+
+  .circle-form-box-bottom-item-list-card-name{
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    top: 20px;
+    right: 20px;
+    float: right;
+    text-align: end;
+    font-size: larger;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgb(140, 140, 140);
+  }
+
+  .circle-form-box-bottom-item-list-card-job{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top: 45px;
+    right: 20px;
+    float: right;
+    text-align: end;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgb(186, 199, 212);
+  }
+
+  .circle-form-box-bottom-item-list-card-bottom-box-red{
+    height: 50px;
+    width: 150px;
+    float: right;
+    top: 100px;
+    right: 0px;
+    position: absolute;
+    background-color: rgb(250, 81, 59);
+  }
+
+  .circle-form-box-bottom-item-list-card-bottom-box-red-text{
+    height: 20px;
+    width: 100%;
+    top: 12px;
+    text-align: center;
+    position: absolute;
+    font-family: Arial;
+    color: white;
+    font-size: larger;
+  }
+
+  .circle-form-box-bottom-item-list-card-left-box-green{
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    background-color: rgb(0, 220, 190)
+  }
+
+  .circle-form-box-bottom-item-list-card-bottom-box-green{
+    height: 50px;
+    width: 150px;
+    float: right;
+    top: 100px;
+    right: 0px;
+    position: absolute;
+    background-color: rgb(0, 220, 190);
+  }
+
+  .circle-form-box-bottom-item-list-card-bottom-box-green-text{
+    height: 20px;
+    width: 100%;
+    top: 12px;
+    text-align: center;
+    position: absolute;
+    font-family: Arial;
+    color: rgb(10, 130, 140);
+    font-size: larger;
+  }
+
   input[type="checkbox"]{
     zoom: 1.75;
   }
+
+  @media only screen and (min-width: 1280px) {
+    .container{
+      position: relative;
+      width: 100%;
+      min-width: 1280px;
+      height: 100%;
+    }
+
+    .logo{
+      top: 0;
+      height: 80px;
+      width: 337px;
+    }
+
+    .itemlist{
+      max-width: 870px;
+    }
+
+    .circle-form-box-bottom-item-list{
+      max-width: 870px;
+    }
+
+    .card{
+      height: 125px;
+      width: 250px;
+    }
+
+    .alertformbox{
+      height: 615px;
+      width: 800px;
+    }
+
+    .reminderformbox{
+      height: 400px;
+      width: 800px;
+    }
+
+    .circle-form-box-bottom-item-list{
+      width: 800px;
+    }
+  }
+
+  @media only screen and (max-width: 1279px) and (min-width: 1024px) {
+    .container{
+      position: relative;
+      width: 100%;
+      min-width: 640px;
+      max-width: 1279px;
+      height: 100%;
+    }
+
+    .logo{
+      top: 0;
+      height: 80px;
+      width: 337px;
+    }
+
+    .itemlist{
+      max-width: 870px;
+    }
+
+    .circle-form-box-bottom-item-list{
+      max-width: 870px;
+    }
+
+    .card{
+      height: 125px;
+      width: 250px;
+    }
+
+    .alertformbox{
+      height: 615px;
+      width: 800px;
+    }
+
+    .reminderformbox{
+      height: 400px;
+      width: 800px;
+    }
+
+    .circle-form-box-bottom-item-list{
+      width: 800px;
+    }
+  }
+
+  @media only screen and (max-width: 1023px) and (min-width: 640px) {
+    .container{
+      position: relative;
+      width: 100%;
+      min-width: 640px;
+      max-width: 1023px;
+      height: 100%;
+    }
+
+    .logo{
+      top: 0;
+      height: 80px;
+      width: 337px;
+    }
+
+    .itemlist{
+      max-width: 550px;
+    }
+
+    .circle-form-box-bottom-item-list{
+      max-width: 650px;
+    }
+
+    .card{
+      height: 125px;
+      width: 250px;
+    }
+
+    .alertformbox{
+      height: 615px;
+      width: 750px;
+    }
+
+    .reminderformbox{
+      height: 400px;
+      width: 750px;
+    }
+
+    .circle-form-box{
+      width: 750px;
+    }
+
+    .profiletext{
+      display: none;
+    }
+
+    .settingtext{
+      display: none;
+    }
+
+    .logouttext{
+      display: none;
+    }
+
+    .profile{
+      top: 10px;
+      right: 150px;
+    }
+
+    .profilepicture{
+      width: 80px;
+      height: 64px;
+    }
+
+    .profiledot{
+      width: 23px;
+      height: 23px;
+      top: 2px;
+      right: 23px;
+    }
+
+    .setting{
+      top: 20px;
+      right: 110px;
+    }
+
+    .logout{
+      top: 20px;
+      right: 40px;
+    }
+
+    .alertboxtext2{
+      display: none;
+    }
+
+    .circle-form-box-bottom-item-list-card{
+      width: 280px;
+      margin: 20px 10px 20px 10px;
+    }
+
+  }
+
+  @media (max-width: 639px) {
+    .container{
+      position: relative;
+      width: 100%;
+      min-width: 320px;
+      max-width: 639px;
+      height: 100%;
+    }
+
+    .logo{
+      top: 10px;
+      height: 60px;
+      width: 253px;
+    }
+
+    .itemlist{
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .card{
+      height: 200px;
+      width: 400px;
+    }
+
+    .menudot{
+      height: 45px;
+      width: 45px;
+    }
+
+    .menudotnumber{
+      position: absolute;
+      color: white;
+      font-size: xx-large;
+      font-weight: bold;
+    }
+
+    .menuitempicture{
+      height: 160px;
+      width: 160px;
+      top: 20px;
+    }
+
+    .menuitemtext{
+      height: 120px;
+      width: 200px;
+      top: 120px;
+      font-size: x-large;
+    }
+
+    .profiletext{
+      display: none;
+    }
+
+    .settingtext{
+      display: none;
+    }
+
+    .logouttext{
+      display: none;
+    }
+
+    .profile{
+      top: 10px;
+      right: 55px;
+    }
+
+    .profilepicture{
+      width: 80px;
+      height: 64px;
+    }
+
+    .profiledot{
+      width: 23px;
+      height: 23px;
+      top: 2px;
+      right: 23px;
+    }
+    .alertformbox{
+      height: 615px;
+      width: 500px;
+    }
+
+    .reminderformbox{
+      height: 400px;
+      width: 500px;
+    }
+
+    .alertboxmenuitemsearch{
+      right: 30px;
+      width: 100px;
+    }
+
+    .circle-form-box{
+      width: 500px;
+    }
+
+    .circle-form-box-bottom-item-list{
+      max-width: 400px;
+    }
+
+    .circle-form-box-bottom-item-list-card{
+      width: 350px;
+      margin: 20px 25px 20px 25px;
+    }
+
+    .circle-form-box-bottom-item-list-card-name{
+      font-size: x-large;
+    }
+
+    .circle-form-box-bottom-item-list-card-job{
+      font-size: larger;
+    }
+
+    .circle-form-box-bottom-box-title{
+      height: 50px;
+    }
+
+    .alertboxitemtext{
+      font-size: small;
+    }
+
+    .alertboxitemmailtitle{
+      display: none;
+    }
+
+    .alertboxtext2{
+      display: none;
+    }
+
+    .fas fa-th-large{
+      display: none;
+    }
+
+    .fas fa-th-list{
+      display: none;
+    }
+
+    .circle-form-box-top-menu-text{
+      top: 5px;
+      font-size: medium;
+    }
+
+    .table-dot-selected-border{
+      left: -1px;
+      top: 6px;
+      height: 35px;
+      width: 35px;
+    }
+
+    .table-dot-selected{
+      height: 25px;
+      width: 25px;
+    }
+
+    .table-dot-unselected{
+      height: 25px;
+      width: 25px;
+      left: 4px;
+      top: 11px;
+    }
+
+    .reminderboxrectangle{
+      left: 10px;
+      width: 100%;
+    }
+
+    .reminder-box-rectangle-2{
+      left: 10px;
+      width: 100%;
+    }
+
+    .reminder-box-rectangle-3{
+      left: 10px;
+      width: 100%;
+    }
+
+    .reminder-box-rectangle-3-change{
+      width: 65px;
+    }
+
+    .reminder-box-rectangle-3-done{
+      width: 65px;
+    }
+
+    .setting{
+      display: none;
+    }
+
+    .logout{
+      display: none;
+    }
+
+    .setting-in{
+      height: 41px;
+      width: 42px;
+    }
+
+    .logout-in{
+      height: 41px;
+      width: 43px;
+    }
+
+    .fa-bars{
+      display: table !important;
+    }
+    
+  }
+
+
+
